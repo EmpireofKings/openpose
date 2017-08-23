@@ -103,21 +103,21 @@ $(document).ready(function(){initNavTree('index.html','');});
 <div class="contents">
 <div class="textblock"><h2>Latest News</h2>
 <ul>
-<li>Apr 2017: <b>Body</b> released!</li>
-<li>May 2017: <b>Windows</b> version released!</li>
-<li>Jun 2017: <b>Face</b> released!</li>
-<li>Jul 2017: <b>Hands</b> released!</li>
 <li>Jul 2017: <b>Windows</b>, New <a href="doc/installation.md#installation---demo">**portable demo**</a> <b>and</b> <a href="doc/installation.md#installation---library">**easier library installation**</a>!</li>
+<li>Jul 2017: <b>Hands</b> released!</li>
+<li>Jun 2017: <b>Face</b> released!</li>
+<li>May 2017: <b>Windows</b> version released!</li>
+<li>Apr 2017: <b>Body</b> released!</li>
 <li>Check all the release notes.</li>
-<li>Interested in an internship on CMU as OpenPose programmer? See <a href="https://docs.google.com/document/d/14SygG39NjIRZfx08clewTdFMGwVdtRu2acyCi3TYcHs/edit?usp=sharing">this link</a> for details.</li>
 </ul>
+<p>We are offering <a href="https://docs.google.com/document/d/14SygG39NjIRZfx08clewTdFMGwVdtRu2acyCi3TYcHs/edit?usp=sharing">internships at Carnegie Mellon University as OpenPose programmer</a> (need to live in or be willing to move to Pittsburgh).</p>
 <h2>Introduction</h2>
 <p>OpenPose is a **library for real-time multi-person keypoint detection and multi-threading written in C++** using OpenCV and Caffe*, authored by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a>, <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~hanbyulj/">Hanbyul Joo</a> and <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
 <ul>
 <li>It uses Caffe, but the code is ready to be ported to other frameworks (Tensorflow, Torch, etc.). If you implement any of those, feel free to make a pull request!</li>
 </ul>
 <p>OpenPose represents the <b>first real-time system to jointly detect human body, hand and facial keypoints (in total 130 keypoints) on single images</b>. In addition, the system computational performance on body keypoint estimation is invariant to the number of detected people in the image.</p>
-<p>OpenPose is freely available for free non-commercial use, and may be redistributed under these conditions. Please, see the [license](LICENSE) for further details. For commercial purposes, contact <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
+<p>OpenPose is freely available for free non-commercial use, and may be redistributed under these conditions. Please, see the [license](LICENSE) for further details. <a href="https://flintbox.com/public/project/47343/">Interested in a commercial license? Check this link</a>. For commercial queries, contact <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
 <p>In addition, OpenPose would not be possible without the <a href="http://domedb.perception.cs.cmu.edu/">CMU Panoptic Studio</a>.</p>
 <p>Library main functionality:</p>
 <ul>
@@ -158,6 +158,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </li>
 <li><a href="#output">Output</a></li>
 <li><a href="#speed-up-openpose-and-benchmark">Speed Up Openpose And Benchmark</a></li>
+<li><a href="#send-us-failure-cases">Send Us Failure Cases!</a></li>
 <li><a href="#send-us-your-feedback">Send Us Your Feedback!</a></li>
 <li><a href="#citation">Citation</a></li>
 <li><a href="#other-contributors">Other Contributors</a></li>
@@ -199,6 +200,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>Check the output (format, keypoint index ordering, etc.) in doc/output.md.</p>
 <h2>Speed Up OpenPose and Benchmark</h2>
 <p>Check the OpenPose Benchmark and some hints to speed up OpenPose on <a href="doc/installation.md#faq">doc/installation.md#faq</a>.</p>
+<h2>Send Us Failure Cases!</h2>
+<p>If you find videos or images where OpenPose does not seems to work well, feel free to send them to <a href="#" onclick="location.href='mai'+'lto:'+'ope'+'np'+'ose'+'cm'+'u@g'+'ma'+'il.'+'co'+'m'; return false;">openp<span style="display: none;">.nosp@m.</span>osec<span style="display: none;">.nosp@m.</span>mu@gm<span style="display: none;">.nosp@m.</span>ail.<span style="display: none;">.nosp@m.</span>com</a>, we will use them to improve the quality of the algorithm. Thanks!</p>
 <h2>Send Us Your Feedback!</h2>
 <p>Our library is open source for research purposes, and we want to continuously improve it! So please, let us know if...</p>
 <ol type="1">
@@ -210,7 +213,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ol>
 <p>Just comment on GibHub or make a pull request and we will answer as soon as possible! Send us an email if you use the library to make a cool demo or YouTube video!</p>
 <h2>Citation</h2>
-<p>Please cite the papers in your publications if it helps your research: </p>
+<p>Please cite these papers in your publications if it helps your research (the face keypoint detector was trained using the same procedure described in [Simon et al. 2017]): </p>
 <pre class="fragment">@inproceedings{cao2017realtime,
   author = {Zhe Cao and Tomas Simon and Shih-En Wei and Yaser Sheikh},
   booktitle = {CVPR},

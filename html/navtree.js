@@ -38,8 +38,8 @@ var NAVTREEINDEX =
 "classop_1_1_queue_base.html#aef098201d9084083adba5ceeb45b12fa",
 "common_8hpp_source.html",
 "keypoint_8hpp.html#a5333b783eb8c9dbd4295d472a0dd44a4",
-"structop_1_1_point.html#a5d825f6fdc9a72abe5f3f52c852bdf13",
-"worker_consumer_8hpp_source.html"
+"structop_1_1_point.html#a480b8feec1a2c0652ea0ab6dd7717e6d",
+"worker_consumer_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

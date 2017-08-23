@@ -213,6 +213,8 @@ var NAVTREEINDEX3 =
 "resize_and_merge_caffe_8hpp_source.html":[2,0,0,0,0,20],
 "string_8hpp.html":[2,0,0,0,9,12],
 "string_8hpp.html#a2c2e3001b4bca6f0f3a3758aecb8cf09":[2,0,0,0,9,12,1],
+"string_8hpp.html#a3290f48d24c9992dd00d339ce49cfac7":[2,0,0,0,9,12,2],
+"string_8hpp.html#a7a815e303884fb2b3346c8cc19d61b23":[2,0,0,0,9,12,3],
 "string_8hpp.html#ae80a103d8a4308bc435342b3d31404c8":[2,0,0,0,9,12,0],
 "string_8hpp_source.html":[2,0,0,0,9,12],
 "structop_1_1_datum.html":[1,0,0,3],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "structop_1_1_datum.html#afcdbf1d87e08761d952d19ef6a8ace10":[1,0,0,3,12],
 "structop_1_1_point.html":[1,0,0,7],
 "structop_1_1_point.html#a0374ab7bcd19af664a6c01328346d238":[1,0,0,7,24],
-"structop_1_1_point.html#a44559988e3980e21568b5d9dd2897368":[1,0,0,7,1],
-"structop_1_1_point.html#a480b8feec1a2c0652ea0ab6dd7717e6d":[1,0,0,7,23],
-"structop_1_1_point.html#a5821bc77a416629916e671793df3ce3b":[1,0,0,7,26]
+"structop_1_1_point.html#a44559988e3980e21568b5d9dd2897368":[1,0,0,7,1]
 };
