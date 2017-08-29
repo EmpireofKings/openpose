@@ -1,5 +1,14 @@
 var NAVTREEINDEX5 =
 {
+"w_queue_orderer_8hpp_source.html":[2,0,0,0,8,16],
+"w_video_saver_8hpp.html":[2,0,0,0,3,18],
+"w_video_saver_8hpp.html#a49bd4106b0cd1cb81980329b06c0d2c8":[2,0,0,0,3,18,1],
+"w_video_saver_8hpp_source.html":[2,0,0,0,3,18],
+"webcam_reader_8hpp.html":[2,0,0,0,7,8],
+"webcam_reader_8hpp_source.html":[2,0,0,0,7,8],
+"worker_8hpp.html":[2,0,0,0,8,13],
+"worker_8hpp.html#a5642545fda1c3bbaf60810cf0e2d2c1d":[2,0,0,0,8,13,1],
+"worker_8hpp_source.html":[2,0,0,0,8,13],
 "worker_consumer_8hpp.html":[2,0,0,0,8,14],
 "worker_consumer_8hpp.html#a01aa5c6e24026536367cf47a64e9bba5":[2,0,0,0,8,14,1],
 "worker_consumer_8hpp_source.html":[2,0,0,0,8,14],

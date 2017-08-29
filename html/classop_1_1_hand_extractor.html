@@ -126,7 +126,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a322a1c3a0ab7abaf0c697246af9309cc"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="classop_1_1_array.html">Array</a>&lt; float &gt;, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classop_1_1_hand_extractor.html#a322a1c3a0ab7abaf0c697246af9309cc">getHandKeypoints</a> () const </td></tr>
 <tr class="separator:a322a1c3a0ab7abaf0c697246af9309cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Hand keypoint extractor class. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a7ec55995554e5f617b56145c8c432558"></a>
 <div class="memitem">
 <div class="memproto">
@@ -182,6 +184,18 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>Constructor of the <a class="el" href="classop_1_1_hand_extractor.html">HandExtractor</a> class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">netInputSize</td><td>Size at which the cropped image (where the hand is located) is resized. </td></tr>
+    <tr><td class="paramname">netOutputSize</td><td>Size of the final results. At the moment, it must be equal than netOutputSize. </td></tr>
+    <tr><td class="paramname">modelFolder</td><td>Folder where the models are located. </td></tr>
+    <tr><td class="paramname">gpuId</td><td>The GPU index (0-based) which the deep net will use. </td></tr>
+    <tr><td class="paramname">numberScales</td><td>Number of scales to run. The more scales, the slower it will be but possibly also more accurate. </td></tr>
+    <tr><td class="paramname">rangeScales</td><td>The range between the smaller and bigger scale. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -215,6 +229,15 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This function extracts the hand keypoints for each detected hand in the image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fpsMode</td><td>handRectangles Location of the hands in the image. It is a length-variable std::vector, where each index corresponds to a different person in the image. Internally the std::vector, a std::array of 2 elements: index 0 and 1 for left and right hand respectively. Inside each array element, a op::Rectangle&lt;float&gt; (similar to cv::Rect for floating values) with the position of that hand (or 0,0,0,0 if some hand is missing, e.g. if a specific person has only half of the body inside the image). </td></tr>
+    <tr><td class="paramname">cvInputData</td><td>Original image in cv::Mat format and BGR format. </td></tr>
+    <tr><td class="paramname">scaleInputToOutput</td><td>Desired scale of the final keypoints. Set to 1 if the desired size is the cvInputData size. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -230,6 +253,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This function returns the hand keypoins. VERY IMPORTANT: use <a class="el" href="classop_1_1_hand_extractor.html#a322a1c3a0ab7abaf0c697246af9309cc">getHandKeypoints()</a>.clone() if the keypoints are going to be edited in a different thread. </p>
+<dl class="section return"><dt>Returns</dt><dd>And std::array with all the left hand keypoints (index 0) and all the right ones (index 1). Each <a class="el" href="classop_1_1_array.html">Array&lt;float&gt;</a> follows the pose structure, i.e. the first dimension corresponds to all the people in the image, the second to each specific keypoint, and the third one to (x, y, score). </dd></dl>
 
 </div>
 </div>
@@ -245,6 +270,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>This function must be call before using any other function. It must also be called inside the thread in which the functions are going to be used. </p>
 
 </div>
 </div>

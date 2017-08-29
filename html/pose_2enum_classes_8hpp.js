@@ -4,6 +4,7 @@ var pose_2enum_classes_8hpp =
       [ "COCO_18", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fa0c4a19d9254adcb3ca1f0f527ee141fd", null ],
       [ "MPI_15", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fad788fbec25069f2884ee1ed97e0af2b9", null ],
       [ "MPI_15_4", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fa71e915c88449606c6498d33dd7c98e84", null ],
+      [ "BODY_18", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fab0fd0573c626fcd55b70d4547328ad7d", null ],
       [ "BODY_22", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fa76f752085bf649435e358d034f5db8a1", null ],
       [ "Size", "pose_2enum_classes_8hpp.html#af5b3ce2a5d3de87cb31b9b67e96f261fa6f6cb72d544962fa333e2e34ce64f719", null ]
     ] ],

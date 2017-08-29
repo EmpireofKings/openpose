@@ -1,5 +1,7 @@
 var pose_parameters_8hpp =
 [
+    [ "POSE_BODY_18_COLORS_RENDER_GPU", "pose_parameters_8hpp.html#a6e17f6ddfcedd5b314d356d30bbf4280", null ],
+    [ "POSE_BODY_18_PAIRS_RENDER_GPU", "pose_parameters_8hpp.html#a0d821946779eaea1be5996816c4ca6bd", null ],
     [ "POSE_BODY_22_COLORS_RENDER_GPU", "pose_parameters_8hpp.html#af0d06cf84c535ba21848497ee5b488dc", null ],
     [ "POSE_BODY_22_PAIRS_RENDER_GPU", "pose_parameters_8hpp.html#a4ba6cdb943a7ead752febba6ad0ba4fd", null ],
     [ "POSE_COCO_COLORS_RENDER_GPU", "pose_parameters_8hpp.html#a8b293ab02337be3f90218c5b824ece06", null ],
@@ -9,6 +11,12 @@ var pose_parameters_8hpp =
     [ "getPoseBodyPartMapping", "pose_parameters_8hpp.html#a41a5430dc7296645934584b8ea0238d7", null ],
     [ "poseBodyPartMapStringToKey", "pose_parameters_8hpp.html#a3df938ef93037c534c5d342720d5fb70", null ],
     [ "poseBodyPartMapStringToKey", "pose_parameters_8hpp.html#aacf6e688031bb116e4878b811e8dbc23", null ],
+    [ "POSE_BODY_18_BODY_PARTS", "pose_parameters_8hpp.html#a4596b1c0cc8f654025d6c5c4c43a92b5", null ],
+    [ "POSE_BODY_18_COLORS_RENDER", "pose_parameters_8hpp.html#abc8fdb41aa395c46430373facfbd554c", null ],
+    [ "POSE_BODY_18_MAP_IDX", "pose_parameters_8hpp.html#a3ce26fa0a7373e612d130d1657ac7d16", null ],
+    [ "POSE_BODY_18_NUMBER_PARTS", "pose_parameters_8hpp.html#a1508c5fa871a1da61a2b740a9c5e2df1", null ],
+    [ "POSE_BODY_18_PAIRS", "pose_parameters_8hpp.html#a360d95ba9769e4cb5cfc7aa2a2bab927", null ],
+    [ "POSE_BODY_18_PAIRS_RENDER", "pose_parameters_8hpp.html#a8bbf4f3e7a4739c4a44faff8d2c7ada9", null ],
     [ "POSE_BODY_22_BODY_PARTS", "pose_parameters_8hpp.html#ab79a8f32a30ea82d19394fec0b9e9834", null ],
     [ "POSE_BODY_22_COLORS_RENDER", "pose_parameters_8hpp.html#a34f1d9229116019053fa5a281d133e23", null ],
     [ "POSE_BODY_22_MAP_IDX", "pose_parameters_8hpp.html#a7aea369b59a6b6d9e2ad57f13487799d", null ],

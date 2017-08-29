@@ -15,7 +15,7 @@ var searchData=
   ['flagstorendermode',['flagsToRenderMode',['../namespaceop.html#a4526c07c6dafe2a5e3437b66d20a6dd3',1,'op']]],
   ['flagstoscalemode',['flagsToScaleMode',['../namespaceop.html#ac3bebe88bedbd7785d48159c8e3f0515',1,'op']]],
   ['flipandrotate',['flipAndRotate',['../classop_1_1_producer.html#aa1a13db305c7ab6a596a0dad122066cb',1,'op::Producer']]],
-  ['floatptrtoucharcvmat',['floatPtrToUCharCvMat',['../namespaceop.html#a7923e19e4e2999685251e82453f4a684',1,'op']]],
+  ['floatptrtoucharcvmat',['floatPtrToUCharCvMat',['../namespaceop.html#a9cd0c6d2db81cd1de7568d805ef214ba',1,'op']]],
   ['forceemplace',['forceEmplace',['../classop_1_1_queue_base.html#a8d218f599b84194909691c72ee0de8d0',1,'op::QueueBase']]],
   ['forcepush',['forcePush',['../classop_1_1_queue_base.html#ad124d414b7c2680e5312ee163d18410f',1,'op::QueueBase']]],
   ['format',['format',['../classop_1_1_cv_mat_to_op_input.html#a95ae5a3b3e765955f4fa380fe0663402',1,'op::CvMatToOpInput::format()'],['../classop_1_1_cv_mat_to_op_output.html#a9bc92b059e6dbfb768247c2db97577e3',1,'op::CvMatToOpOutput::format()']]],
