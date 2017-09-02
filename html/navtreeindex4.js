@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"structop_1_1_datum.html#a847f62b3060c5d0d106e60c29df87a0b":[1,0,0,3,4],
 "structop_1_1_datum.html#aab9997004b6b761267f8ce312b8048e9":[1,0,0,3,5],
 "structop_1_1_datum.html#aae900e3c8101ab5acce9fc5e4d50830a":[1,0,0,3,6],
 "structop_1_1_datum.html#acdf94a3ee6504d8b70afffa997d52d4b":[1,0,0,3,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "w_pose_saver_8hpp.html":[2,0,0,0,3,17],
 "w_pose_saver_8hpp.html#a31ad937a2e52ea08ce925031d26616b9":[2,0,0,0,3,17,1],
 "w_pose_saver_8hpp_source.html":[2,0,0,0,3,17],
-"w_queue_orderer_8hpp.html":[2,0,0,0,8,16],
-"w_queue_orderer_8hpp.html#add981a5f6a49d35cc316a54c613497f3":[2,0,0,0,8,16,1]
+"w_queue_orderer_8hpp.html":[2,0,0,0,8,16]
 };

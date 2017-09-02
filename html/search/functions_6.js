@@ -28,6 +28,7 @@ var searchData=
   ['getisrunningsharedptr',['getIsRunningSharedPtr',['../classop_1_1_thread_manager.html#a48ea53b3de4d09c84db18e2c31ce1be1',1,'op::ThreadManager']]],
   ['getkeypointsarea',['getKeypointsArea',['../namespaceop.html#a87e601f12524c4d1735946ae5c99a796',1,'op']]],
   ['getkeypointsrectangle',['getKeypointsRectangle',['../namespaceop.html#a0ed46e7438a7b5386434dc6c6731fdb7',1,'op']]],
+  ['getlastnumber',['getLastNumber',['../namespaceop.html#ab670c693d8e4a540cfe75ce8383b6d10',1,'op']]],
   ['getlogmodes',['getLogModes',['../classop_1_1_configure_log.html#a01eebce325f7e401601804d58fd3a2b2',1,'op::ConfigureLog']]],
   ['getmaxsize',['getMaxSize',['../classop_1_1_queue_base.html#a25255992523051f7d2a82694ffe7a1cf',1,'op::QueueBase']]],
   ['getnextfilename',['getNextFileName',['../classop_1_1_file_saver.html#a9de8d694a526f981906c54bd48ea9b21',1,'op::FileSaver::getNextFileName(const unsigned long long index) const '],['../classop_1_1_file_saver.html#a91818f12a9409eae7c1caf6e2b525282',1,'op::FileSaver::getNextFileName(const std::string &amp;fileNameNoExtension) const ']]],
