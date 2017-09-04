@@ -1,6 +1,6 @@
 var classop_1_1_pose_renderer =
 [
-    [ "PoseRenderer", "classop_1_1_pose_renderer.html#a44f4cff61690c2cb27ec343af3ff9a77", null ],
+    [ "PoseRenderer", "classop_1_1_pose_renderer.html#a6e63443a41f52c3cc8aa35cdcb3531a2", null ],
     [ "~PoseRenderer", "classop_1_1_pose_renderer.html#a34377acf4fa5222bec8eb344b2e13d46", null ],
     [ "getBlendOriginalFrame", "classop_1_1_pose_renderer.html#a50cb9a5e28c969af9c0012081a4af8c0", null ],
     [ "getShowGooglyEyes", "classop_1_1_pose_renderer.html#aaeaa7132882d512ed6a57f40b0c4ab45", null ],

@@ -767,7 +767,7 @@ int &gt; POSE_MPI_PAIRS&#160;</td><td class="memItemRight" valign="bottom"><a cl
 <tr class="memitem:a9e87deaa37c301fac10af492469bcc86"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceop.html#a9e87deaa37c301fac10af492469bcc86">POSE_MPI_COLORS_RENDER</a> {<a class="el" href="pose_parameters_8hpp.html#a7fdd75b1478d65f11ebc77144662958c">POSE_MPI_COLORS_RENDER_GPU</a>}</td></tr>
 <tr class="separator:a9e87deaa37c301fac10af492469bcc86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4596b1c0cc8f654025d6c5c4c43a92b5"><td class="memItemLeft" align="right" valign="top">const std::map&lt; unsigned int, <br class="typebreak"/>
-std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceop.html#a4596b1c0cc8f654025d6c5c4c43a92b5">POSE_BODY_18_BODY_PARTS</a> {<a class="el" href="namespaceop.html#a1007a541c7af1a5e1e15475b8c4cec3b">POSE_COCO_BODY_PARTS</a>}</td></tr>
+std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceop.html#a4596b1c0cc8f654025d6c5c4c43a92b5">POSE_BODY_18_BODY_PARTS</a></td></tr>
 <tr class="separator:a4596b1c0cc8f654025d6c5c4c43a92b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1508c5fa871a1da61a2b740a9c5e2df1"><td class="memItemLeft" align="right" valign="top">const unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceop.html#a1508c5fa871a1da61a2b740a9c5e2df1">POSE_BODY_18_NUMBER_PARTS</a> {<a class="el" href="namespaceop.html#a4dad15b160be5343298d80f4d83a6150">POSE_COCO_NUMBER_PARTS</a>}</td></tr>
 <tr class="separator:a1508c5fa871a1da61a2b740a9c5e2df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -5636,11 +5636,32 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const std::map&lt;unsigned int, std::string&gt; op::POSE_BODY_18_BODY_PARTS {<a class="el" href="namespaceop.html#a1007a541c7af1a5e1e15475b8c4cec3b">POSE_COCO_BODY_PARTS</a>}</td>
+          <td class="memname">const std::map&lt;unsigned int, std::string&gt; op::POSE_BODY_18_BODY_PARTS</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">{ </div>
+<div class="line">        { 0,  <span class="stringliteral">&quot;Nose&quot;</span> },</div>
+<div class="line">        { 1,  <span class="stringliteral">&quot;Neck&quot;</span> },</div>
+<div class="line">        { 2,  <span class="stringliteral">&quot;RShoulder&quot;</span> },</div>
+<div class="line">        { 3,  <span class="stringliteral">&quot;RElbow&quot;</span> },</div>
+<div class="line">        { 4,  <span class="stringliteral">&quot;RWrist&quot;</span> },</div>
+<div class="line">        { 5,  <span class="stringliteral">&quot;LShoulder&quot;</span> },</div>
+<div class="line">        { 6,  <span class="stringliteral">&quot;LElbow&quot;</span> },</div>
+<div class="line">        { 7,  <span class="stringliteral">&quot;LWrist&quot;</span> },</div>
+<div class="line">        { 8,  <span class="stringliteral">&quot;RHip&quot;</span> },</div>
+<div class="line">        { 9,  <span class="stringliteral">&quot;RKnee&quot;</span> },</div>
+<div class="line">        { 10, <span class="stringliteral">&quot;RAnkle&quot;</span> },</div>
+<div class="line">        { 11, <span class="stringliteral">&quot;LHip&quot;</span> },</div>
+<div class="line">        { 12, <span class="stringliteral">&quot;LKnee&quot;</span> },</div>
+<div class="line">        { 13, <span class="stringliteral">&quot;LAnkle&quot;</span> },</div>
+<div class="line">        { 14, <span class="stringliteral">&quot;REye&quot;</span> },</div>
+<div class="line">        { 15, <span class="stringliteral">&quot;LEye&quot;</span> },</div>
+<div class="line">        { 16, <span class="stringliteral">&quot;REar&quot;</span> },</div>
+<div class="line">        { 17, <span class="stringliteral">&quot;LEar&quot;</span> },</div>
+<div class="line">        { 18, <span class="stringliteral">&quot;Background&quot;</span> }</div>
+<div class="line">    }</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="abc8fdb41aa395c46430373facfbd554c"></a>
@@ -5812,8 +5833,8 @@ template&lt;typename T &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">        <a class="code" href="namespaceop.html#a67518f0a66cb3ee382b88a999e4f20b8">POSE_COCO_PAIRS</a>,        POSE_MPI_PAIRS,         POSE_MPI_PAIRS,         <a class="code" href="namespaceop.html#a360d95ba9769e4cb5cfc7aa2a2bab927">POSE_BODY_18_PAIRS</a>,         <a class="code" href="namespaceop.html#a3c25369e1a2358e30bff742046b1d8d0">POSE_BODY_22_PAIRS</a></div>
 <div class="line">    }</div>
-<div class="ttc" id="namespaceop_html_a3c25369e1a2358e30bff742046b1d8d0"><div class="ttname"><a href="namespaceop.html#a3c25369e1a2358e30bff742046b1d8d0">op::POSE_BODY_22_PAIRS</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_PAIRS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:143</div></div>
-<div class="ttc" id="namespaceop_html_a360d95ba9769e4cb5cfc7aa2a2bab927"><div class="ttname"><a href="namespaceop.html#a360d95ba9769e4cb5cfc7aa2a2bab927">op::POSE_BODY_18_PAIRS</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_PAIRS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:110</div></div>
+<div class="ttc" id="namespaceop_html_a3c25369e1a2358e30bff742046b1d8d0"><div class="ttname"><a href="namespaceop.html#a3c25369e1a2358e30bff742046b1d8d0">op::POSE_BODY_22_PAIRS</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_PAIRS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:163</div></div>
+<div class="ttc" id="namespaceop_html_a360d95ba9769e4cb5cfc7aa2a2bab927"><div class="ttname"><a href="namespaceop.html#a360d95ba9769e4cb5cfc7aa2a2bab927">op::POSE_BODY_18_PAIRS</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_PAIRS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:130</div></div>
 <div class="ttc" id="namespaceop_html_a67518f0a66cb3ee382b88a999e4f20b8"><div class="ttname"><a href="namespaceop.html#a67518f0a66cb3ee382b88a999e4f20b8">op::POSE_COCO_PAIRS</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_COCO_PAIRS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:42</div></div>
 </div><!-- fragment -->
 </div>
@@ -5830,9 +5851,9 @@ template&lt;typename T &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">        <a class="code" href="namespaceop.html#ae8d324a5c49dcbfd1b6f820608f5a292">POSE_COCO_PAIRS_RENDER</a>, POSE_MPI_PAIRS,         POSE_MPI_PAIRS,         <a class="code" href="namespaceop.html#a8bbf4f3e7a4739c4a44faff8d2c7ada9">POSE_BODY_18_PAIRS_RENDER</a>,  <a class="code" href="namespaceop.html#aff78610d19467a56d0619c1f737860f8">POSE_BODY_22_PAIRS_RENDER</a></div>
 <div class="line">    }</div>
-<div class="ttc" id="namespaceop_html_aff78610d19467a56d0619c1f737860f8"><div class="ttname"><a href="namespaceop.html#aff78610d19467a56d0619c1f737860f8">op::POSE_BODY_22_PAIRS_RENDER</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_PAIRS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:142</div></div>
+<div class="ttc" id="namespaceop_html_aff78610d19467a56d0619c1f737860f8"><div class="ttname"><a href="namespaceop.html#aff78610d19467a56d0619c1f737860f8">op::POSE_BODY_22_PAIRS_RENDER</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_PAIRS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:162</div></div>
 <div class="ttc" id="namespaceop_html_ae8d324a5c49dcbfd1b6f820608f5a292"><div class="ttname"><a href="namespaceop.html#ae8d324a5c49dcbfd1b6f820608f5a292">op::POSE_COCO_PAIRS_RENDER</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_COCO_PAIRS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:41</div></div>
-<div class="ttc" id="namespaceop_html_a8bbf4f3e7a4739c4a44faff8d2c7ada9"><div class="ttname"><a href="namespaceop.html#a8bbf4f3e7a4739c4a44faff8d2c7ada9">op::POSE_BODY_18_PAIRS_RENDER</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_PAIRS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:109</div></div>
+<div class="ttc" id="namespaceop_html_a8bbf4f3e7a4739c4a44faff8d2c7ada9"><div class="ttname"><a href="namespaceop.html#a8bbf4f3e7a4739c4a44faff8d2c7ada9">op::POSE_BODY_18_PAIRS_RENDER</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_PAIRS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:129</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -5957,9 +5978,9 @@ template&lt;typename T &gt; </div>
 <div class="line">        <a class="code" href="namespaceop.html#a93a4ee242c33f626ff146643bb8971bd">POSE_COCO_COLORS_RENDER</a>,<a class="code" href="namespaceop.html#a9e87deaa37c301fac10af492469bcc86">POSE_MPI_COLORS_RENDER</a>, <a class="code" href="namespaceop.html#a9e87deaa37c301fac10af492469bcc86">POSE_MPI_COLORS_RENDER</a>, <a class="code" href="namespaceop.html#abc8fdb41aa395c46430373facfbd554c">POSE_BODY_18_COLORS_RENDER</a>, <a class="code" href="namespaceop.html#a34f1d9229116019053fa5a281d133e23">POSE_BODY_22_COLORS_RENDER</a></div>
 <div class="line">    }</div>
 <div class="ttc" id="namespaceop_html_a9e87deaa37c301fac10af492469bcc86"><div class="ttname"><a href="namespaceop.html#a9e87deaa37c301fac10af492469bcc86">op::POSE_MPI_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_MPI_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:103</div></div>
-<div class="ttc" id="namespaceop_html_abc8fdb41aa395c46430373facfbd554c"><div class="ttname"><a href="namespaceop.html#abc8fdb41aa395c46430373facfbd554c">op::POSE_BODY_18_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_BODY_18_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:112</div></div>
+<div class="ttc" id="namespaceop_html_abc8fdb41aa395c46430373facfbd554c"><div class="ttname"><a href="namespaceop.html#abc8fdb41aa395c46430373facfbd554c">op::POSE_BODY_18_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_BODY_18_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:132</div></div>
 <div class="ttc" id="namespaceop_html_a93a4ee242c33f626ff146643bb8971bd"><div class="ttname"><a href="namespaceop.html#a93a4ee242c33f626ff146643bb8971bd">op::POSE_COCO_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_COCO_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:62</div></div>
-<div class="ttc" id="namespaceop_html_a34f1d9229116019053fa5a281d133e23"><div class="ttname"><a href="namespaceop.html#a34f1d9229116019053fa5a281d133e23">op::POSE_BODY_22_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_BODY_22_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:163</div></div>
+<div class="ttc" id="namespaceop_html_a34f1d9229116019053fa5a281d133e23"><div class="ttname"><a href="namespaceop.html#a34f1d9229116019053fa5a281d133e23">op::POSE_BODY_22_COLORS_RENDER</a></div><div class="ttdeci">const std::vector&lt; float &gt; POSE_BODY_22_COLORS_RENDER</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:183</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6074,10 +6095,10 @@ template&lt;typename T &gt; </div>
 <b>Initial value:</b><div class="fragment"><div class="line">{</div>
 <div class="line">        <a class="code" href="namespaceop.html#a674110c186802f7df02ad7822a885542">POSE_COCO_MAP_IDX</a>,      <a class="code" href="namespaceop.html#a46dc266a61a0b0061563cb9c6359cb71">POSE_MPI_MAP_IDX</a>,       <a class="code" href="namespaceop.html#a46dc266a61a0b0061563cb9c6359cb71">POSE_MPI_MAP_IDX</a>,       <a class="code" href="namespaceop.html#a3ce26fa0a7373e612d130d1657ac7d16">POSE_BODY_18_MAP_IDX</a>,       <a class="code" href="namespaceop.html#a7aea369b59a6b6d9e2ad57f13487799d">POSE_BODY_22_MAP_IDX</a></div>
 <div class="line">    }</div>
-<div class="ttc" id="namespaceop_html_a3ce26fa0a7373e612d130d1657ac7d16"><div class="ttname"><a href="namespaceop.html#a3ce26fa0a7373e612d130d1657ac7d16">op::POSE_BODY_18_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:107</div></div>
+<div class="ttc" id="namespaceop_html_a3ce26fa0a7373e612d130d1657ac7d16"><div class="ttname"><a href="namespaceop.html#a3ce26fa0a7373e612d130d1657ac7d16">op::POSE_BODY_18_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_18_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:127</div></div>
 <div class="ttc" id="namespaceop_html_a674110c186802f7df02ad7822a885542"><div class="ttname"><a href="namespaceop.html#a674110c186802f7df02ad7822a885542">op::POSE_COCO_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_COCO_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:39</div></div>
 <div class="ttc" id="namespaceop_html_a46dc266a61a0b0061563cb9c6359cb71"><div class="ttname"><a href="namespaceop.html#a46dc266a61a0b0061563cb9c6359cb71">op::POSE_MPI_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_MPI_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:83</div></div>
-<div class="ttc" id="namespaceop_html_a7aea369b59a6b6d9e2ad57f13487799d"><div class="ttname"><a href="namespaceop.html#a7aea369b59a6b6d9e2ad57f13487799d">op::POSE_BODY_22_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:140</div></div>
+<div class="ttc" id="namespaceop_html_a7aea369b59a6b6d9e2ad57f13487799d"><div class="ttname"><a href="namespaceop.html#a7aea369b59a6b6d9e2ad57f13487799d">op::POSE_BODY_22_MAP_IDX</a></div><div class="ttdeci">const std::vector&lt; unsigned int &gt; POSE_BODY_22_MAP_IDX</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:160</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -6200,8 +6221,8 @@ template&lt;typename T &gt; </div>
 <div class="line">        <a class="code" href="namespaceop.html#a4dad15b160be5343298d80f4d83a6150">POSE_COCO_NUMBER_PARTS</a>, <a class="code" href="namespaceop.html#ad8ed879d7e9d7bb73c0da7650ce934da">POSE_MPI_NUMBER_PARTS</a>,  <a class="code" href="namespaceop.html#ad8ed879d7e9d7bb73c0da7650ce934da">POSE_MPI_NUMBER_PARTS</a>,  <a class="code" href="namespaceop.html#a1508c5fa871a1da61a2b740a9c5e2df1">POSE_BODY_18_NUMBER_PARTS</a>,  <a class="code" href="namespaceop.html#a089e14365c3e3d4e7c2f02a234965129">POSE_BODY_22_NUMBER_PARTS</a></div>
 <div class="line">    }</div>
 <div class="ttc" id="namespaceop_html_a4dad15b160be5343298d80f4d83a6150"><div class="ttname"><a href="namespaceop.html#a4dad15b160be5343298d80f4d83a6150">op::POSE_COCO_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_COCO_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:38</div></div>
-<div class="ttc" id="namespaceop_html_a1508c5fa871a1da61a2b740a9c5e2df1"><div class="ttname"><a href="namespaceop.html#a1508c5fa871a1da61a2b740a9c5e2df1">op::POSE_BODY_18_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_BODY_18_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:106</div></div>
-<div class="ttc" id="namespaceop_html_a089e14365c3e3d4e7c2f02a234965129"><div class="ttname"><a href="namespaceop.html#a089e14365c3e3d4e7c2f02a234965129">op::POSE_BODY_22_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_BODY_22_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:139</div></div>
+<div class="ttc" id="namespaceop_html_a1508c5fa871a1da61a2b740a9c5e2df1"><div class="ttname"><a href="namespaceop.html#a1508c5fa871a1da61a2b740a9c5e2df1">op::POSE_BODY_18_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_BODY_18_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:126</div></div>
+<div class="ttc" id="namespaceop_html_a089e14365c3e3d4e7c2f02a234965129"><div class="ttname"><a href="namespaceop.html#a089e14365c3e3d4e7c2f02a234965129">op::POSE_BODY_22_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_BODY_22_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:159</div></div>
 <div class="ttc" id="namespaceop_html_ad8ed879d7e9d7bb73c0da7650ce934da"><div class="ttname"><a href="namespaceop.html#ad8ed879d7e9d7bb73c0da7650ce934da">op::POSE_MPI_NUMBER_PARTS</a></div><div class="ttdeci">const unsigned int POSE_MPI_NUMBER_PARTS</div><div class="ttdef"><b>Definition:</b> poseParameters.hpp:82</div></div>
 </div><!-- fragment -->
 </div>
