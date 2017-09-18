@@ -688,15 +688,15 @@ Generating docs for compoun/home/travis/build/bikz05/openpose/include/openpose/h
 /home/travis/build/bikz05/openpose/include/openpose/wrapper/wrapperStructPose.hpp:99: warning: explicit link request to 'body' could not be resolved
 /home/travis/build/bikz05/openpose/include/openpose/wrapper/wrapperStructPose.hpp:99: warning: explicit link request to 'pair' could not be resolved
 /home/travis/build/bikz05/openpose/README.md:17: warning: unable to resolve reference to `doc/release_notes.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:95: warning: unable to resolve reference to `doc/installation.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:107: warning: unable to resolve reference to `doc/demo_overview.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:123: warning: unable to resolve reference to `doc/library_overview.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:125: warning: unable to resolve reference to `doc/library_extend_functionality.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:127: warning: unable to resolve reference to `doc/library_add_new_module.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:140: warning: unable to resolve reference to `doc/output.md' for \ref command
-/home/travis/build/bikz05/openpose/README.md:160: warning: explicit link request to 'faq' could not be resolved
-/home/travis/build/bikz05/openpose/README.md:165: warning: explicit link request to 'faq' could not be resolved
-/home/travis/build/bikz05/openpose/README.md:221: warning: unable to resolve reference to `doc/contributors.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:94: warning: unable to resolve reference to `doc/installation.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:106: warning: unable to resolve reference to `doc/demo_overview.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:122: warning: unable to resolve reference to `doc/library_overview.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:124: warning: unable to resolve reference to `doc/library_extend_functionality.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:126: warning: unable to resolve reference to `doc/library_add_new_module.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:139: warning: unable to resolve reference to `doc/output.md' for \ref command
+/home/travis/build/bikz05/openpose/README.md:144: warning: explicit link request to 'faq' could not be resolved
+/home/travis/build/bikz05/openpose/README.md:149: warning: explicit link request to 'faq' could not be resolved
+/home/travis/build/bikz05/openpose/README.md:205: warning: unable to resolve reference to `doc/contributors.md' for \ref command
 d op::JsonOfstream...
 Generating docs for compound op::KeypointJsonSaver...
 Generating docs for compound op::KeypointSaver...

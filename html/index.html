@@ -135,7 +135,6 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ol>
 </li>
 <li><a href="#output">Output</a></li>
-<li><a href="#custom-caffe">Custom Caffe</a></li>
 <li><a href="#standalone-face-or-hand-keypoint-detector">Standalone Face Or Hand Keypoint Detector</a></li>
 <li><a href="#speed-up-openpose-and-benchmark">Speed Up Openpose And Benchmark</a></li>
 <li><a href="#send-us-failure-cases">Send Us Failure Cases!</a></li>
@@ -188,19 +187,6 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>You can generate the documentation by running the following command. The documentation will be generated in <code>doc/doxygen/html/index.html</code>. You can simply open it with double-click (your default browser should automatically display it). ``` cd doc/ doxygen doc_autogeneration.doxygen ```</p>
 <h2>Output</h2>
 <p>Check the output (format, keypoint index ordering, etc.) in doc/output.md.</p>
-<h2>Custom Caffe</h2>
-<p>We only modified some Caffe compilation flags and minor details. You can use your own Caffe distribution, these are the files we added and modified:</p>
-<ol type="1">
-<li>Added files: <code>install_caffe.sh</code>; as well as <code>Makefile.config.Ubuntu14.example</code>, <code>Makefile.config.Ubuntu16.example</code>, <code>Makefile.config.Ubuntu14_cuda_7.example</code> and <code>Makefile.config.Ubuntu16_cuda_7.example</code> (extracted from <code>Makefile.config.example</code>). Basically, you must enable cuDNN.</li>
-<li>Edited file: Makefile. Search for "# OpenPose: " to find the edited code. We basically added the C++11 flag to avoid issues in some old computers.</li>
-<li>Optional - deleted Caffe file: <code>Makefile.config.example</code>.</li>
-<li>In order to link it to OpenPose:<ol type="a">
-<li>Run <code>make all &amp;&amp; make distribute</code> in your Caffe version.</li>
-<li>Open the OpenPose Makefile config file: <code>./Makefile.config.UbuntuX.example</code> (where X depends on your OS and CUDA version).</li>
-<li>Modify the Caffe folder directory variable (<code>CAFFE_DIR</code>) to your custom Caffe <code>distribute</code> folder location in the previous OpenPose Makefile config file.</li>
-</ol>
-</li>
-</ol>
 <h2>Standalone Face Or Hand Keypoint Detector</h2>
 <p>In case of hand camera views at which the hands are visible but not the rest of the body, or if you do not need the body keypoint detector and want to considerably speed up the process, you can use the OpenPose face or hand keypoint detectors with your own face or hand detectors, rather than using the body keypoint detector as initial detector for those. More information in <a href="doc/standalone_face_or_hand_keypoint_detector.md#faq">doc/standalone_face_or_hand_keypoint_detector.md#faq</a>.</p>
 <h2>Speed Up OpenPose and Benchmark</h2>
