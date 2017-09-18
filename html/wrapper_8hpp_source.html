@@ -560,7 +560,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;                <span class="comment">// GPU rendering</span></div>
 <div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;                <span class="keywordflow">if</span> (renderOutputGpu)</div>
 <div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;                {</div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0; gpuId &lt; poseExtractors.size(); gpuId++)</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0u; gpuId &lt; poseExtractors.size(); gpuId++)</div>
 <div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;                    {</div>
 <div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;                        poseRenderers.emplace_back(std::make_shared&lt;PoseRenderer&gt;(</div>
 <div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;                            poseNetOutputSize, finalOutputSize, wrapperStructPose.<a class="code" href="structop_1_1_wrapper_struct_pose.html#a35147b6fb9e300d79b71637793053a1b">poseModel</a>, poseExtractors[gpuId],</div>
@@ -592,14 +592,14 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;</div>
 <div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <span class="comment">// Pose extractor(s)</span></div>
 <div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            spWPoses.resize(poseExtractors.size());</div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; spWPoses.size(); i++)</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; spWPoses.size(); i++)</div>
 <div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                spWPoses.at(i) = {std::make_shared&lt;WPoseExtractor&lt;TDatumsPtr&gt;&gt;(poseExtractors.at(i))};</div>
 <div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;</div>
 <div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            <span class="comment">// Face extractor(s)</span></div>
 <div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            <span class="keywordflow">if</span> (wrapperStructFace.<a class="code" href="structop_1_1_wrapper_struct_face.html#a8fadeca500dde0df2a35f864bf05ee05">enable</a>)</div>
 <div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;            {</div>
 <div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;                <span class="keyword">const</span> <span class="keyword">auto</span> faceDetector = std::make_shared&lt;FaceDetector&gt;(wrapperStructPose.<a class="code" href="structop_1_1_wrapper_struct_pose.html#a35147b6fb9e300d79b71637793053a1b">poseModel</a>);</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0; gpuId &lt; spWPoses.size(); gpuId++)</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0u; gpuId &lt; spWPoses.size(); gpuId++)</div>
 <div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                {</div>
 <div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                    <span class="comment">// Face detector</span></div>
 <div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                    spWPoses.at(gpuId).emplace_back(std::make_shared&lt;<a class="code" href="classop_1_1_w_face_detector.html">WFaceDetector&lt;TDatumsPtr&gt;</a>&gt;(faceDetector));</div>
@@ -616,7 +616,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;            <span class="keywordflow">if</span> (wrapperStructHand.<a class="code" href="structop_1_1_wrapper_struct_hand.html#a667ad7eed9f4f96b460f331d25f3d87f">enable</a>)</div>
 <div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            {</div>
 <div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;                <span class="keyword">const</span> <span class="keyword">auto</span> handDetector = std::make_shared&lt;HandDetector&gt;(wrapperStructPose.<a class="code" href="structop_1_1_wrapper_struct_pose.html#a35147b6fb9e300d79b71637793053a1b">poseModel</a>);</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0; gpuId &lt; spWPoses.size(); gpuId++)</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> gpuId = 0u; gpuId &lt; spWPoses.size(); gpuId++)</div>
 <div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;                {</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;                    <span class="comment">// Hand detector</span></div>
 <div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;                    <span class="comment">// If tracking</span></div>
@@ -640,7 +640,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;</div>
 <div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;            <span class="comment">// Pose renderer(s)</span></div>
 <div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;            <span class="keywordflow">if</span> (!poseRenderers.empty())</div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; spWPoses.size(); i++)</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; spWPoses.size(); i++)</div>
 <div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;                    spWPoses.at(i).emplace_back(std::make_shared&lt;<a class="code" href="classop_1_1_w_pose_renderer.html">WPoseRenderer&lt;TDatumsPtr&gt;</a>&gt;(poseRenderers.at(i)));</div>
 <div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;</div>
 <div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            <span class="comment">// Face renderer(s)</span></div>
@@ -660,7 +660,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;                <span class="comment">// GPU rendering</span></div>
 <div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wrapperStructFace.<a class="code" href="structop_1_1_wrapper_struct_face.html#accc6e564598130b9bf0a6d0ec9c304c4">renderMode</a> == <a class="code" href="namespaceop.html#afce557f02e337e16150d00bdf72ec033a3432ca64f06615abf07ab44c10cada38">RenderMode::Gpu</a>)</div>
 <div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;                {</div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; spWPoses.size(); i++)</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; spWPoses.size(); i++)</div>
 <div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;                    {</div>
 <div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;                        <span class="comment">// Construct face renderer</span></div>
 <div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;                        <span class="keyword">const</span> <span class="keyword">auto</span> faceRenderer = std::make_shared&lt;FaceRenderer&gt;(finalOutputSize, wrapperStructFace.<a class="code" href="structop_1_1_wrapper_struct_face.html#a982e3f1a13358a522e1882d17cb80d57">renderThreshold</a>,</div>
@@ -698,7 +698,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;                <span class="comment">// GPU rendering</span></div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (wrapperStructHand.<a class="code" href="structop_1_1_wrapper_struct_hand.html#a90ddd24ee55b6aabd9a1728ccd91525e">renderMode</a> == <a class="code" href="namespaceop.html#afce557f02e337e16150d00bdf72ec033a3432ca64f06615abf07ab44c10cada38">RenderMode::Gpu</a>)</div>
 <div class="line"><a name="l00729"></a><span class="lineno">  729</span>&#160;                {</div>
-<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; spWPoses.size(); i++)</div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;                    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; spWPoses.size(); i++)</div>
 <div class="line"><a name="l00731"></a><span class="lineno">  731</span>&#160;                    {</div>
 <div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;                        <span class="comment">// Construct hands renderer</span></div>
 <div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;                        <span class="keyword">const</span> <span class="keyword">auto</span> handRenderer = std::make_shared&lt;HandRenderer&gt;(finalOutputSize, wrapperStructHand.<a class="code" href="structop_1_1_wrapper_struct_hand.html#a9655c0dfa83eefde174d09e622482089">renderThreshold</a>,</div>
@@ -722,7 +722,7 @@ $(document).ready(function(){initNavTree('wrapper_8hpp_source.html','');});
 <div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;            <span class="comment">// Itermediate workers (e.g. OpenPose format to cv::Mat, json &amp; frames recorder, ...)</span></div>
 <div class="line"><a name="l00752"></a><span class="lineno">  752</span>&#160;            mPostProcessingWs.clear();</div>
 <div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;            <span class="comment">// Frame buffer and ordering</span></div>
-<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            <span class="keywordflow">if</span> (spWPoses.size() &gt; 1)</div>
+<div class="line"><a name="l00754"></a><span class="lineno">  754</span>&#160;            <span class="keywordflow">if</span> (spWPoses.size() &gt; 1u)</div>
 <div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;                mPostProcessingWs.emplace_back(std::make_shared&lt;<a class="code" href="classop_1_1_w_queue_orderer.html">WQueueOrderer&lt;TDatumsPtr&gt;</a>&gt;());</div>
 <div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;            <span class="comment">// Frames processor (OpenPose format -&gt; cv::Mat format)</span></div>
 <div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;            <span class="keywordflow">if</span> (renderOutput)</div>

@@ -168,7 +168,7 @@ $(document).ready(function(){initNavTree('w_pose_saver_8hpp_source.html','');});
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                <span class="keyword">auto</span>&amp; tDatumsNoPtr = *tDatums;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <span class="comment">// Record people pose keypoint data</span></div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                std::vector&lt;Array&lt;float&gt;&gt; keypointVector(tDatumsNoPtr.size());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; tDatumsNoPtr.size(); i++)</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; tDatumsNoPtr.size(); i++)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                    keypointVector[i] = tDatumsNoPtr[i].poseKeypoints;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keyword">const</span> <span class="keyword">auto</span> fileName = (!tDatumsNoPtr[0].name.empty() ? tDatumsNoPtr[0].name : std::to_string(tDatumsNoPtr[0].<span class="keywordtype">id</span>));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                spKeypointSaver-&gt;saveKeypoints(keypointVector, fileName, <span class="stringliteral">&quot;pose&quot;</span>);</div>

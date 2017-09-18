@@ -121,7 +121,7 @@ $(document).ready(function(){initNavTree('w_queue_orderer_8hpp_source.html','');
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classop_1_1_w_queue_orderer.html">   12</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classop_1_1_w_queue_orderer.html">WQueueOrderer</a> : <span class="keyword">public</span> <a class="code" href="classop_1_1_worker.html">Worker</a>&lt;TDatums&gt;</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    {</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classop_1_1_w_queue_orderer.html#a9d11ba7dd3f9687b9115af92fe81fc4d">WQueueOrderer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> maxBufferSize = 64);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">explicit</span> <a class="code" href="classop_1_1_w_queue_orderer.html#a3303add5fa8cc36593d3d859ffdd8ae0">WQueueOrderer</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> maxBufferSize = 64u);</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classop_1_1_w_queue_orderer.html#a85598f83f6f3a30b7ddce9bc7beddf33">initializationOnThread</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
@@ -130,7 +130,7 @@ $(document).ready(function(){initNavTree('w_queue_orderer_8hpp_source.html','');
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classop_1_1_w_queue_orderer.html#a01bc7495ec992cc9c54a040534cb3634">tryStop</a>();</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> mMaxBufferSize;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> mMaxBufferSize;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordtype">bool</span> mStopWhenEmpty;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> <span class="keywordtype">long</span> mNextExpectedId;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::priority_queue&lt;TDatums, std::vector&lt;TDatums&gt;, <a class="code" href="classop_1_1_pointer_container_greater.html">PointerContainerGreater&lt;TDatums&gt;</a>&gt; mPriorityQueueBuffer;</div>
@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('w_queue_orderer_8hpp_source.html','');
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">namespace </span>op</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> TDatums&gt;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classop_1_1_w_queue_orderer.html#a9d11ba7dd3f9687b9115af92fe81fc4d">   43</a></span>&#160;    <a class="code" href="classop_1_1_w_queue_orderer.html#a9d11ba7dd3f9687b9115af92fe81fc4d">WQueueOrderer&lt;TDatums&gt;::WQueueOrderer</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> maxBufferSize) :</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classop_1_1_w_queue_orderer.html#a3303add5fa8cc36593d3d859ffdd8ae0">   43</a></span>&#160;    <a class="code" href="classop_1_1_w_queue_orderer.html#a3303add5fa8cc36593d3d859ffdd8ae0">WQueueOrderer&lt;TDatums&gt;::WQueueOrderer</a>(<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> maxBufferSize) :</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        mMaxBufferSize{maxBufferSize},</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        mStopWhenEmpty{<span class="keyword">false</span>},</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        mNextExpectedId{0}</div>
@@ -208,7 +208,7 @@ $(document).ready(function(){initNavTree('w_queue_orderer_8hpp_source.html','');
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                mNextExpectedId = tDatumsNoPtr[0].id + 1;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="comment">// Sleep if no new tDatums to either pop</span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="namespaceop.html#a02164ca0af9e838190f584f5d1d8465e">checkNoNullNorEmpty</a>(tDatums) &amp;&amp; mPriorityQueueBuffer.size() &lt; mMaxBufferSize / 2)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="namespaceop.html#a02164ca0af9e838190f584f5d1d8465e">checkNoNullNorEmpty</a>(tDatums) &amp;&amp; mPriorityQueueBuffer.size() &lt; mMaxBufferSize / 2u)</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                std::this_thread::sleep_for(std::chrono::milliseconds{1});</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">// If TDatum popped and/or pushed</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">if</span> (profileSpeed || tDatums != <span class="keyword">nullptr</span>)</div>
@@ -265,9 +265,9 @@ $(document).ready(function(){initNavTree('w_queue_orderer_8hpp_source.html','');
 <div class="ttc" id="worker_8hpp_html"><div class="ttname"><a href="worker_8hpp.html">worker.hpp</a></div></div>
 <div class="ttc" id="namespaceop_html_a02164ca0af9e838190f584f5d1d8465e"><div class="ttname"><a href="namespaceop.html#a02164ca0af9e838190f584f5d1d8465e">op::checkNoNullNorEmpty</a></div><div class="ttdeci">bool checkNoNullNorEmpty(const TPointerContainer &amp;tPointerContainer)</div><div class="ttdef"><b>Definition:</b> pointerContainer.hpp:7</div></div>
 <div class="ttc" id="namespaceop_html_a9076fc1719030c2a74f21682999d2315"><div class="ttname"><a href="namespaceop.html#a9076fc1719030c2a74f21682999d2315">op::COMPILE_TEMPLATE_DATUM</a></div><div class="ttdeci">COMPILE_TEMPLATE_DATUM(WCvMatToOpInput)</div></div>
+<div class="ttc" id="classop_1_1_w_queue_orderer_html_a3303add5fa8cc36593d3d859ffdd8ae0"><div class="ttname"><a href="classop_1_1_w_queue_orderer.html#a3303add5fa8cc36593d3d859ffdd8ae0">op::WQueueOrderer::WQueueOrderer</a></div><div class="ttdeci">WQueueOrderer(const unsigned int maxBufferSize=64u)</div><div class="ttdef"><b>Definition:</b> wQueueOrderer.hpp:43</div></div>
 <div class="ttc" id="classop_1_1_profiler_html_a58b930a54a98bbc91af074395852da76"><div class="ttname"><a href="classop_1_1_profiler.html#a58b930a54a98bbc91af074395852da76">op::Profiler::printAveragedTimeMsOnIterationX</a></div><div class="ttdeci">static void printAveragedTimeMsOnIterationX(const std::string &amp;key, const int line, const std::string &amp;function, const std::string &amp;file, const unsigned long long x=DEFAULT_X)</div></div>
 <div class="ttc" id="classop_1_1_profiler_html_affff5b0b992e05276b2a699f97ad525d"><div class="ttname"><a href="classop_1_1_profiler.html#affff5b0b992e05276b2a699f97ad525d">op::Profiler::timerEnd</a></div><div class="ttdeci">static void timerEnd(const std::string &amp;key)</div></div>
-<div class="ttc" id="classop_1_1_w_queue_orderer_html_a9d11ba7dd3f9687b9115af92fe81fc4d"><div class="ttname"><a href="classop_1_1_w_queue_orderer.html#a9d11ba7dd3f9687b9115af92fe81fc4d">op::WQueueOrderer::WQueueOrderer</a></div><div class="ttdeci">WQueueOrderer(const int maxBufferSize=64)</div><div class="ttdef"><b>Definition:</b> wQueueOrderer.hpp:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

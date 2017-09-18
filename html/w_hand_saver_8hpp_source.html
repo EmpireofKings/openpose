@@ -170,11 +170,11 @@ $(document).ready(function(){initNavTree('w_hand_saver_8hpp_source.html','');});
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                <span class="keyword">const</span> <span class="keyword">auto</span> fileName = (!tDatumsNoPtr[0].name.empty() ? tDatumsNoPtr[0].name : std::to_string(tDatumsNoPtr[0].<span class="keywordtype">id</span>));</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;                std::vector&lt;Array&lt;float&gt;&gt; keypointVector(tDatumsNoPtr.size());</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;                <span class="comment">// Left hand</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; tDatumsNoPtr.size(); i++)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; tDatumsNoPtr.size(); i++)</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                    keypointVector[i] = tDatumsNoPtr[i].handKeypoints[0];</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                spKeypointSaver-&gt;saveKeypoints(keypointVector, fileName, <span class="stringliteral">&quot;hand_left&quot;</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <span class="comment">// Right hand</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0; i &lt; tDatumsNoPtr.size(); i++)</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span> i = 0u; i &lt; tDatumsNoPtr.size(); i++)</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                    keypointVector[i] = tDatumsNoPtr[i].handKeypoints[1];</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                spKeypointSaver-&gt;saveKeypoints(keypointVector, fileName, <span class="stringliteral">&quot;hand_right&quot;</span>);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                <span class="comment">// Profiling speed</span></div>
