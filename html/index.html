@@ -106,7 +106,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>&lt;img src="doc/media/pose_face_hands.gif", width="480"&gt; </p>
 <h2>Latest News</h2>
 <ul>
-<li>Jul 2017: <b>Windows</b>, New <a href="doc/installation.md#installation---demo">**portable demo**</a> <b>and</b> <a href="doc/installation.md#installation---library">**easier library installation**</a>!</li>
+<li>Jul 2017: <b>Windows</b>, new <a href="doc/installation.md#installation---demo">**portable demo**</a> <b>and</b> <a href="doc/installation.md#installation---library">**easier library installation**</a>!</li>
 <li>Jul 2017: <b>Hands</b> released!</li>
 <li>Jun 2017: <b>Face</b> released!</li>
 <li>May 2017: <b>Windows</b> version released!</li>
@@ -126,7 +126,6 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a href="#results">Results</a></li>
 <li><a href="#introduction">Introduction</a></li>
 <li><a href="#functionality">Functionality</a></li>
-<li><a href="#operating-systems">Operating Systems</a></li>
 <li><a href="#installation-reinstallation-and-uninstallation">Installation, Reinstallation and Uninstallation</a></li>
 <li><a href="#quick-start">Quick Start</a><ol type="a">
 <li><a href="#demo">Demo</a></li>
@@ -140,18 +139,20 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li><a href="#send-us-failure-cases">Send Us Failure Cases!</a></li>
 <li><a href="#send-us-your-feedback">Send Us Your Feedback!</a></li>
 <li><a href="#citation">Citation</a></li>
+</ol>
+<ol type="1">
 <li><a href="#other-contributors">Other Contributors</a></li>
 </ol>
 <h2>Introduction</h2>
 <p>OpenPose represents the <b>first real-time system to jointly detect human body, hand and facial keypoints (in total 130 keypoints) on single images</b>. In addition, the system computational performance on body keypoint estimation is invariant to the number of detected people in the image. It uses Caffe, but it could easily be ported to other frameworks (Tensorflow, Torch, etc.). If you implement any of those, feel free to make a pull request!</p>
-<p>OpenPose is authored by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a>, <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~hanbyulj/">Hanbyul Joo</a> and <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
+<p>OpenPose is authored by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a>, <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~hanbyulj/">Hanbyul Joo</a> and <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>. In addition, it is being maintained by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a> and <a href="https://www.linkedin.com/in/bikz05">Bikramjot Hanzra</a>.</p>
 <p>It is freely available for free non-commercial use, and may be redistributed under these conditions. Please, see the [license](LICENSE) for further details. <a href="https://flintbox.com/public/project/47343/">Interested in a commercial license? Check this link</a>. For commercial queries, contact <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
 <p>In addition, OpenPose would not be possible without the <a href="http://domedb.perception.cs.cmu.edu/">CMU Panoptic Studio</a>.</p>
 <p>The pose estimation work is based on the C++ code from <a href="https://github.com/CMU-Perceptual-Computing-Lab/caffe_rtpose">the ECCV 2016 demo</a>, "Realtime Multiperson Pose Estimation", <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>. The <a href="https://github.com/ZheC/Multi-Person-Pose-Estimation">original repo</a> includes Matlab and Python version, as well as the training code.</p>
 <h2>Functionality</h2>
 <ul>
 <li>Multi-person 15 or <b>18-keypoint body pose</b> estimation and rendering. <b>Running time invariant to number of people</b> on the image.</li>
-<li>Multi-person <b>2x21-keypoint hand</b> estimation and rendering. Note: In this initial version, <b>running time</b> linearly <b>depends</b> on the <b>number of people</b> on the image. <b>Coming soon (in around 1-5 days)!</b></li>
+<li>Multi-person <b>2x21-keypoint hand</b> estimation and rendering. Note: In this initial version, <b>running time</b> linearly <b>depends</b> on the <b>number of people</b> on the image.</li>
 <li>Multi-person <b>70-keypoint face</b> estimation and rendering. Note: In this initial version, <b>running time</b> linearly <b>depends</b> on the <b>number of people</b> on the image.</li>
 <li>Flexible and easy-to-configure <b>multi-threading</b> module.</li>
 <li>Image, video, and webcam reader.</li>
@@ -159,32 +160,24 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Small display and GUI for simple result visualization.</li>
 <li>All the functionality is wrapped into a <b>simple-to-use OpenPose Wrapper class</b>.</li>
 </ul>
-<h2>Operating Systems</h2>
-<ol type="1">
-<li><b>Ubuntu</b> 14 and 16.</li>
-<li><b>Windows</b> 8 and 10.</li>
-<li>OpenPose has also been used on <b>Windows 7</b>, <b>Mac</b>, <b>CentOS</b>, and <b>Nvidia Jetson (TK1 and TX1)</b> embedded systems. However, we do not officially support them at the moment.</li>
-</ol>
 <h2>Installation, Reinstallation and Uninstallation</h2>
 <p>You can find the installation, reinstallation and uninstallation steps on: doc/installation.md.</p>
 <h2>Quick Start</h2>
 <p>Most users cases should not need to dive deep into the library, they might just be able to use the <a href="#demo">Demo</a> or the simple <a href="#openpose-wrapper">OpenPose Wrapper</a>. So you can most probably skip the library details in <a href="#openpose-library">OpenPose Library</a>.</p>
-<h4>Demo</h4>
+<h3>Demo</h3>
 <p>Your case if you just want to process a folder of images or video or webcam and display or save the pose results.</p>
 <p>Forget about the OpenPose library details and just read the doc/demo_overview.md 1-page section.</p>
-<h4>OpenPose Wrapper</h4>
+<h3>OpenPose Wrapper</h3>
 <p>Your case if you want to read a specific format of image source and/or add a specific post-processing function and/or implement your own display/saving.</p>
 <p>(Almost) forget about the library, just take a look to the <code>Wrapper</code> tutorial on <a href="examples/tutorial_wrapper/">examples/tutorial_wrapper/</a>.</p>
 <p>Note: you should not need to modify the OpenPose source code nor examples. In this way, you are able to directly upgrade OpenPose anytime in the future without changing your code. You might create your custom code on <a href="examples/user_code/">examples/user_code/</a> and compile it by using <code>make all</code> in the OpenPose folder.</p>
-<h4>OpenPose Library</h4>
+<h3>OpenPose Library</h3>
 <p>Your case if you want to change internal functions and/or extend its functionality. First, take a look at the <a href="#demo">Demo</a> and <a href="#openpose-wrapper">OpenPose Wrapper</a>. Second, read the 2 following subsections: OpenPose Overview and Extending Functionality.</p>
 <ol type="1">
 <li>OpenPose Overview: Learn the basics about the library source code in doc/library_overview.md.</li>
 <li>Extending Functionality: Learn how to extend the library in doc/library_extend_functionality.md.</li>
 <li>Adding An Extra Module: Learn how to add an extra module in doc/library_add_new_module.md.</li>
 </ol>
-<h4>Doxygen Documentation Autogeneration</h4>
-<p>You can generate the documentation by running the following command. The documentation will be generated in <code>doc/doxygen/html/index.html</code>. You can simply open it with double-click (your default browser should automatically display it). ``` cd doc/ doxygen doc_autogeneration.doxygen ```</p>
 <h2>Output</h2>
 <p>Check the output (format, keypoint index ordering, etc.) in doc/output.md.</p>
 <h2>Standalone Face Or Hand Keypoint Detector</h2>
