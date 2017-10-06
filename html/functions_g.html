@@ -148,9 +148,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <h3><a class="anchor" id="index_g"></a>- g -</h3><ul>
 <li>get()
 : <a class="el" href="classop_1_1_image_directory_reader.html#aa05bfd69272e81115ba23a3c0731b596">op::ImageDirectoryReader</a>
+, <a class="el" href="classop_1_1_ip_camera_reader.html#aa7ad6adac6e401193e03d279176dd889">op::IpCameraReader</a>
 , <a class="el" href="classop_1_1_pose_extractor.html#a7dc82be227cc759582184de9c26f0b64">op::PoseExtractor</a>
 , <a class="el" href="classop_1_1_producer.html#a366881a952ad34071cc719477f08b968">op::Producer</a>
-, <a class="el" href="classop_1_1_video_capture_reader.html#a64e5cbfb1c556d64cabcebc6eb94eaf1">op::VideoCaptureReader</a>
+, <a class="el" href="classop_1_1_video_capture_reader.html#ae9b111f8b4de16905a157bb6dda09f94">op::VideoCaptureReader</a>
 , <a class="el" href="classop_1_1_video_reader.html#a057a7d0c498c48639b38c10ac7efc183">op::VideoReader</a>
 , <a class="el" href="classop_1_1_webcam_reader.html#a38ccbdf61f21fba0694362077cb6bdb1">op::WebcamReader</a>
 </li>
@@ -161,7 +162,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classop_1_1_renderer.html#ac4df12764776ba2e27c71a3c4181f647">op::Renderer</a>
 </li>
 <li>getBlendOriginalFrame()
-: <a class="el" href="classop_1_1_pose_renderer.html#a50cb9a5e28c969af9c0012081a4af8c0">op::PoseRenderer</a>
+: <a class="el" href="classop_1_1_renderer.html#a8e0739fb55d61fc76918ca3fb6ac3bc4">op::Renderer</a>
 </li>
 <li>getConstCvMat()
 : <a class="el" href="classop_1_1_array.html#ab70165463db3e2fb3f15ad14001eb592">op::Array&lt; T &gt;</a>
@@ -183,6 +184,7 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 </li>
 <li>getFrameName()
 : <a class="el" href="classop_1_1_image_directory_reader.html#a964d60140081c79353b637405dda962c">op::ImageDirectoryReader</a>
+, <a class="el" href="classop_1_1_ip_camera_reader.html#a2277d9a58316bfb4314bf345369e37c1">op::IpCameraReader</a>
 , <a class="el" href="classop_1_1_producer.html#adc348105fca58f18e39aa3439e2d627b">op::Producer</a>
 , <a class="el" href="classop_1_1_video_capture_reader.html#a83b4cd38f8eb2182711c506e84d97253">op::VideoCaptureReader</a>
 , <a class="el" href="classop_1_1_video_reader.html#a28244ab83836e0d0b2a896f33ad34403">op::VideoReader</a>
@@ -198,7 +200,9 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classop_1_1_pose_extractor.html#a0b895e3e582bd504b531ba525ed77430">op::PoseExtractor</a>
 </li>
 <li>getHeatMaps()
-: <a class="el" href="classop_1_1_pose_extractor.html#a1f91723c5d541a2872637a1510da76e6">op::PoseExtractor</a>
+: <a class="el" href="classop_1_1_face_extractor.html#af326457ed8977781fe48f1086ac5efee">op::FaceExtractor</a>
+, <a class="el" href="classop_1_1_hand_extractor.html#af5ce8cd602820921de3ec3f676aacf0d">op::HandExtractor</a>
+, <a class="el" href="classop_1_1_pose_extractor.html#a1f91723c5d541a2872637a1510da76e6">op::PoseExtractor</a>
 </li>
 <li>getInputDataCpuPtr()
 : <a class="el" href="classop_1_1_net.html#a042324a660661408830caf85cfe17603">op::Net</a>
@@ -241,10 +245,10 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 : <a class="el" href="classop_1_1_pose_extractor.html#a5fd73c053c293c59eb3d6eb38335c157">op::PoseExtractor</a>
 </li>
 <li>getSharedParameters()
-: <a class="el" href="classop_1_1_renderer.html#aec5ea88125a96434b52b70ebfc7c5cdb">op::Renderer</a>
+: <a class="el" href="classop_1_1_gpu_renderer.html#a5576d2da79ef7ff38ee86b35383d6d46">op::GpuRenderer</a>
 </li>
 <li>getShowGooglyEyes()
-: <a class="el" href="classop_1_1_pose_renderer.html#aaeaa7132882d512ed6a57f40b0c4ab45">op::PoseRenderer</a>
+: <a class="el" href="classop_1_1_renderer.html#a891be57b699f6adbb7cd841870214b8e">op::Renderer</a>
 </li>
 <li>getSize()
 : <a class="el" href="classop_1_1_array.html#a146d6e773e14dd7aaa29a73f878358e1">op::Array&lt; T &gt;</a>
@@ -264,14 +268,17 @@ $(document).ready(function(){initNavTree('functions_g.html','');});
 <li>gpuNumberStart
 : <a class="el" href="structop_1_1_wrapper_struct_pose.html#a8be188d871061079432ead77b278fe0d">op::WrapperStructPose</a>
 </li>
+<li>GpuRenderer()
+: <a class="el" href="classop_1_1_gpu_renderer.html#a9852b2017e972637b47250bb7fbc53ea">op::GpuRenderer</a>
+</li>
 <li>gpuToCpuMemoryIfLastRenderer()
-: <a class="el" href="classop_1_1_renderer.html#a4baa9fca69a5afd3e6b4718986f43ea5">op::Renderer</a>
+: <a class="el" href="classop_1_1_gpu_renderer.html#a6355f70d16c6427b028fa4596ce5d985">op::GpuRenderer</a>
 </li>
 <li>Gui()
-: <a class="el" href="classop_1_1_gui.html#a85cf3d06c38068acb8c26fbd59421b99">op::Gui</a>
+: <a class="el" href="classop_1_1_gui.html#a892a74fac9f123a4cb9e196bfcc3432a">op::Gui</a>
 </li>
 <li>GuiInfoAdder()
-: <a class="el" href="classop_1_1_gui_info_adder.html#af385bef42d4d473e0cffbeecfa353ec0">op::GuiInfoAdder</a>
+: <a class="el" href="classop_1_1_gui_info_adder.html#af23e17f9eeb51c7473cd0940292efa61">op::GuiInfoAdder</a>
 </li>
 <li>guiVerbose
 : <a class="el" href="structop_1_1_wrapper_struct_output.html#ac72ad601daf957b9b000206e9f1fe0ad">op::WrapperStructOutput</a>

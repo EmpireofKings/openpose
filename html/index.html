@@ -106,10 +106,11 @@ $(document).ready(function(){initNavTree('index.html','');});
 <p>&lt;img src="doc/media/pose_face_hands.gif", width="480"&gt; </p>
 <h2>Latest News</h2>
 <ul>
-<li>Jul 2017: <b>Windows</b>, new <a href="doc/installation.md#installation---demo">**portable demo**</a> <b>and</b> <a href="doc/installation.md#installation---library">**easier library installation**</a>!</li>
+<li>Sep 2017: <b>CMake</b> installer and <b>IP camera</b> support!</li>
+<li>Jul 2017: <a href="doc/installation.md#installation---demo">**Windows portable demo**</a>!</li>
 <li>Jul 2017: <b>Hands</b> released!</li>
 <li>Jun 2017: <b>Face</b> released!</li>
-<li>May 2017: <b>Windows</b> version released!</li>
+<li>May 2017: <b>Windows</b> version!</li>
 <li>Apr 2017: <b>Body</b> released!</li>
 <li>Check all the release notes.</li>
 </ul>
@@ -145,7 +146,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 </ol>
 <h2>Introduction</h2>
 <p>OpenPose represents the <b>first real-time system to jointly detect human body, hand and facial keypoints (in total 130 keypoints) on single images</b>. In addition, the system computational performance on body keypoint estimation is invariant to the number of detected people in the image. It uses Caffe, but it could easily be ported to other frameworks (Tensorflow, Torch, etc.). If you implement any of those, feel free to make a pull request!</p>
-<p>OpenPose is authored by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a>, <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~hanbyulj/">Hanbyul Joo</a> and <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>. In addition, it is being maintained by <a href="http://gines-hidalgo.site123.me/">Gines Hidalgo</a> and <a href="https://www.linkedin.com/in/bikz05">Bikramjot Hanzra</a>.</p>
+<p>OpenPose is authored by <a href="http://gineshidalgo.com/">Gines Hidalgo</a>, <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~hanbyulj/">Hanbyul Joo</a> and <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>. In addition, it is being maintained by <a href="http://gineshidalgo.com/">Gines Hidalgo</a> and <a href="https://www.linkedin.com/in/bikz05">Bikramjot Hanzra</a>.</p>
 <p>It is freely available for free non-commercial use, and may be redistributed under these conditions. Please, see the [license](LICENSE) for further details. <a href="https://flintbox.com/public/project/47343/">Interested in a commercial license? Check this link</a>. For commercial queries, contact <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>.</p>
 <p>In addition, OpenPose would not be possible without the <a href="http://domedb.perception.cs.cmu.edu/">CMU Panoptic Studio</a>.</p>
 <p>The pose estimation work is based on the C++ code from <a href="https://github.com/CMU-Perceptual-Computing-Lab/caffe_rtpose">the ECCV 2016 demo</a>, "Realtime Multiperson Pose Estimation", <a href="http://www.andrew.cmu.edu/user/zhecao">Zhe Cao</a>, <a href="http://www.cs.cmu.edu/~tsimon/">Tomas Simon</a>, <a href="https://scholar.google.com/citations?user=sFQD3k4AAAAJ&amp;hl=en">Shih-En Wei</a>, <a href="http://www.cs.cmu.edu/~yaser/">Yaser Sheikh</a>. The <a href="https://github.com/ZheC/Multi-Person-Pose-Estimation">original repo</a> includes Matlab and Python version, as well as the training code.</p>
@@ -155,7 +156,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>Multi-person <b>2x21-keypoint hand</b> estimation and rendering. Note: In this initial version, <b>running time</b> linearly <b>depends</b> on the <b>number of people</b> on the image.</li>
 <li>Multi-person <b>70-keypoint face</b> estimation and rendering. Note: In this initial version, <b>running time</b> linearly <b>depends</b> on the <b>number of people</b> on the image.</li>
 <li>Flexible and easy-to-configure <b>multi-threading</b> module.</li>
-<li>Image, video, and webcam reader.</li>
+<li>Image, video, webcam and IP camera reader.</li>
 <li>Able to save and load the results in various formats (JSON, XML, PNG, JPG, ...).</li>
 <li>Small display and GUI for simple result visualization.</li>
 <li>All the functionality is wrapped into a <b>simple-to-use OpenPose Wrapper class</b>.</li>
@@ -181,7 +182,8 @@ $(document).ready(function(){initNavTree('index.html','');});
 <h2>Output</h2>
 <p>Check the output (format, keypoint index ordering, etc.) in doc/output.md.</p>
 <h2>Standalone Face Or Hand Keypoint Detector</h2>
-<p>In case of hand camera views at which the hands are visible but not the rest of the body, or if you do not need the body keypoint detector and want to considerably speed up the process, you can use the OpenPose face or hand keypoint detectors with your own face or hand detectors, rather than using the body keypoint detector as initial detector for those. More information in <a href="doc/standalone_face_or_hand_keypoint_detector.md#faq">doc/standalone_face_or_hand_keypoint_detector.md#faq</a>.</p>
+<p>If you do not need the body keypoint detector and want to considerably speed up the face keypoint detection, you can use the new approach based on OpenCV face detector. See doc/standalone_face_or_hand_keypoint_detector.md.</p>
+<p>You can also use the OpenPose hand and/or face keypoint detectors with your own face or hand detectors, rather than using the body keypoint detector as initial detector for those. E.g. in case of hand camera views at which the hands are visible but not the rest of the body, so that the OpenPose detector would fail. See doc/standalone_face_or_hand_keypoint_detector.md.</p>
 <h2>Speed Up OpenPose and Benchmark</h2>
 <p>Check the OpenPose Benchmark and some hints to speed up OpenPose on <a href="doc/installation.md#faq">doc/installation.md#faq</a>.</p>
 <h2>Send Us Failure Cases!</h2>
@@ -195,7 +197,7 @@ $(document).ready(function(){initNavTree('index.html','');});
 <li>... you have a request about possible functionality.</li>
 <li>... etc.</li>
 </ol>
-<p>Just comment on GibHub or make a pull request and we will answer as soon as possible! Send us an email if you use the library to make a cool demo or YouTube video!</p>
+<p>Just comment on GitHub or make a pull request and we will answer as soon as possible! Send us an email if you use the library to make a cool demo or YouTube video!</p>
 <h2>Citation</h2>
 <p>Please cite these papers in your publications if it helps your research (the face keypoint detector was trained using the same procedure described in [Simon et al. 2017]): </p>
 <pre class="fragment">@inproceedings{cao2017realtime,
@@ -203,21 +205,21 @@ $(document).ready(function(){initNavTree('index.html','');});
   booktitle = {CVPR},
   title = {Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields},
   year = {2017}
-  }
+}
 
 @inproceedings{simon2017hand,
   author = {Tomas Simon and Hanbyul Joo and Iain Matthews and Yaser Sheikh},
   booktitle = {CVPR},
   title = {Hand Keypoint Detection in Single Images using Multiview Bootstrapping},
   year = {2017}
-  }
+}
 
 @inproceedings{wei2016cpm,
   author = {Shih-En Wei and Varun Ramakrishna and Takeo Kanade and Yaser Sheikh},
   booktitle = {CVPR},
   title = {Convolutional pose machines},
   year = {2016}
-  }
+}
 </pre><h2>Other Contributors</h2>
 <p>We would like to thank all the people who helped OpenPose in any way. The main contributors are listed in doc/contributors.md. </p>
 </div></div><!-- contents -->
