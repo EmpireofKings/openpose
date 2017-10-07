@@ -12,6 +12,9 @@ var dir_817169bec52d5a8ce9d97010665a3646 =
     [ "faceExtractor.hpp", "face_extractor_8hpp.html", [
       [ "FaceExtractor", "classop_1_1_face_extractor.html", "classop_1_1_face_extractor" ]
     ] ],
+    [ "faceExtractorCaffe.hpp", "face_extractor_caffe_8hpp.html", [
+      [ "FaceExtractorCaffe", "classop_1_1_face_extractor_caffe.html", "classop_1_1_face_extractor_caffe" ]
+    ] ],
     [ "faceGpuRenderer.hpp", "face_gpu_renderer_8hpp.html", [
       [ "FaceGpuRenderer", "classop_1_1_face_gpu_renderer.html", "classop_1_1_face_gpu_renderer" ]
     ] ],
