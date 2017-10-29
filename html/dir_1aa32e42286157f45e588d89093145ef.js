@@ -14,5 +14,6 @@ var dir_1aa32e42286157f45e588d89093145ef =
     [ "profiler.hpp", "profiler_8hpp.html", [
       [ "Profiler", "classop_1_1_profiler.html", null ]
     ] ],
+    [ "standard.hpp", "standard_8hpp.html", "standard_8hpp" ],
     [ "string.hpp", "string_8hpp.html", "string_8hpp" ]
 ];
