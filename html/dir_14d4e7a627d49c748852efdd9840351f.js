@@ -20,6 +20,7 @@ var dir_14d4e7a627d49c748852efdd9840351f =
       [ "PoseGpuRenderer", "classop_1_1_pose_gpu_renderer.html", "classop_1_1_pose_gpu_renderer" ]
     ] ],
     [ "poseParameters.hpp", "pose_parameters_8hpp.html", "pose_parameters_8hpp" ],
+    [ "poseParametersRender.hpp", "pose_parameters_render_8hpp.html", "pose_parameters_render_8hpp" ],
     [ "poseRenderer.hpp", "pose_renderer_8hpp.html", [
       [ "PoseRenderer", "classop_1_1_pose_renderer.html", "classop_1_1_pose_renderer" ]
     ] ],

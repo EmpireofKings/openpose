@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "op::Array< T >", "classop_1_1_array.html", null ],
     [ "op::Array< float >", "classop_1_1_array.html", null ],
+    [ "op::Array< long long >", "classop_1_1_array.html", null ],
     [ "caffe::Blob< T >", "classcaffe_1_1_blob.html", null ],
     [ "op::BodyPartConnectorCaffe< T >", "classop_1_1_body_part_connector_caffe.html", null ],
     [ "op::CocoJsonSaver", "classop_1_1_coco_json_saver.html", null ],
@@ -23,8 +24,8 @@ var hierarchy =
     [ "op::FileSaver", "classop_1_1_file_saver.html", [
       [ "op::HeatMapSaver", "classop_1_1_heat_map_saver.html", null ],
       [ "op::ImageSaver", "classop_1_1_image_saver.html", null ],
-      [ "op::KeypointJsonSaver", "classop_1_1_keypoint_json_saver.html", null ],
-      [ "op::KeypointSaver", "classop_1_1_keypoint_saver.html", null ]
+      [ "op::KeypointSaver", "classop_1_1_keypoint_saver.html", null ],
+      [ "op::PeopleJsonSaver", "classop_1_1_people_json_saver.html", null ]
     ] ],
     [ "op::FrameDisplayer", "classop_1_1_frame_displayer.html", null ],
     [ "op::Gui", "classop_1_1_gui.html", null ],
@@ -46,6 +47,7 @@ var hierarchy =
     ] ],
     [ "op::NmsCaffe< T >", "classop_1_1_nms_caffe.html", null ],
     [ "op::OpOutputToCvMat", "classop_1_1_op_output_to_cv_mat.html", null ],
+    [ "op::PersonIdExtractor", "classop_1_1_person_id_extractor.html", null ],
     [ "op::Point< T >", "structop_1_1_point.html", null ],
     [ "op::Point< int >", "structop_1_1_point.html", null ],
     [ "op::PointerContainerGreater< TDatums >", "classop_1_1_pointer_container_greater.html", null ],
@@ -118,13 +120,14 @@ var hierarchy =
         [ "op::WHandSaver< TDatums >", "classop_1_1_w_hand_saver.html", null ],
         [ "op::WHeatMapSaver< TDatums >", "classop_1_1_w_heat_map_saver.html", null ],
         [ "op::WImageSaver< TDatums >", "classop_1_1_w_image_saver.html", null ],
-        [ "op::WKeypointJsonSaver< TDatums >", "classop_1_1_w_keypoint_json_saver.html", null ],
+        [ "op::WPeopleJsonSaver< TDatums >", "classop_1_1_w_people_json_saver.html", null ],
         [ "op::WPoseSaver< TDatums >", "classop_1_1_w_pose_saver.html", null ],
         [ "op::WVideoSaver< TDatums >", "classop_1_1_w_video_saver.html", null ]
       ] ],
       [ "op::WorkerProducer< TDatums >", "classop_1_1_worker_producer.html", [
         [ "op::WDatumProducer< TDatums, TDatumsNoPtr >", "classop_1_1_w_datum_producer.html", null ]
       ] ],
+      [ "op::WPersonIdExtractor< TDatums >", "classop_1_1_w_person_id_extractor.html", null ],
       [ "op::WPoseExtractor< TDatums >", "classop_1_1_w_pose_extractor.html", null ],
       [ "op::WPoseRenderer< TDatums >", "classop_1_1_w_pose_renderer.html", null ],
       [ "op::WQueueOrderer< TDatums >", "classop_1_1_w_queue_orderer.html", null ],

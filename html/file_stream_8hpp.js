@@ -6,8 +6,9 @@ var file_stream_8hpp =
     [ "loadImage", "file_stream_8hpp.html#ad8705cea162a5874afc33fdec9a37d9f", null ],
     [ "saveData", "file_stream_8hpp.html#a7dbf8ae7dec5eb913da4bd2e27e49f7d", null ],
     [ "saveData", "file_stream_8hpp.html#a9aa59e0cf663360a10f372d7680ad39c", null ],
+    [ "saveFloatArray", "file_stream_8hpp.html#ac1080e627185a65b88ec788184a95552", null ],
     [ "saveImage", "file_stream_8hpp.html#a80f8d102523be3fd8a884d14e38cbce9", null ],
-    [ "saveKeypointsJson", "file_stream_8hpp.html#a5aed82f96e76f818d663e4f36d538070", null ],
-    [ "saveKeypointsJson", "file_stream_8hpp.html#adbf40f4d71086d4e072e8dba79e8a41a", null ],
+    [ "savePeopleJson", "file_stream_8hpp.html#af9c189f7c80092570699c8b9d5686fea", null ],
+    [ "savePeopleJson", "file_stream_8hpp.html#a1e986a510a29bfd8c682f65a8b399551", null ],
     [ "stringToDataFormat", "file_stream_8hpp.html#a46e815df32db67d78a94367b7f97df25", null ]
 ];
