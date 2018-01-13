@@ -1,4 +1,4 @@
-set(SOURCES 
+set(SOURCES
     bodyPartConnectorBase.cpp
     bodyPartConnectorBase.cu
     bodyPartConnectorCaffe.cpp
@@ -8,6 +8,7 @@ set(SOURCES
     poseExtractorCaffe.cpp
     poseGpuRenderer.cpp
     poseParameters.cpp
+    poseParametersRender.cpp
     poseRenderer.cpp
     renderPose.cpp
     renderPose.cu)
@@ -22,4 +23,3 @@ install(TARGETS openpose_pose
     RUNTIME DESTINATION bin
     LIBRARY DESTINATION lib
     ARCHIVE DESTINATION lib/openpose)
-
